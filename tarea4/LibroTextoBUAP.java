@@ -1,4 +1,4 @@
-package tarea3;
+package tarea4;
 
 public class LibroTextoBUAP extends LibroTexto {
 

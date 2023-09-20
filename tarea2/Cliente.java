@@ -1,6 +1,5 @@
 package tarea2;
 
-import tarea1.Libro;
 
 import java.util.Scanner;
 
