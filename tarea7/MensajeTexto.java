@@ -9,6 +9,14 @@ public class MensajeTexto {
         this.mensajeTexto = mensajeTexto;
     }
 
+    @Override
+    public String toString() {
+        return "MensajeTexto{" +
+                "codigo='" + codigo + '\'' +
+                ", mensajeTexto='" + mensajeTexto + '\'' +
+                '}';
+    }
+
     public String getCodigo() {
         return codigo;
     }
