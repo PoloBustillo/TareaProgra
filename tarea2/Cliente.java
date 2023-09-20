@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Cliente {
     public static void main(String[] args) {
-        Scanner leer=new Scanner(System.in);
+        Scanner leer = new Scanner(System.in);
 
         System.out.println("TITULO:");
         String titulo = leer.next();
@@ -18,15 +18,14 @@ public class Cliente {
         double precio = leer.nextDouble();
 
 
-
         Libro libro = new Libro(titulo, autores, precio);
 
 
         System.out.println("TITULO2:");
-         titulo = leer.next();
+        titulo = leer.next();
 
         System.out.println("AUTORES2:");
-         autores = leer.next();
+        autores = leer.next();
 
         System.out.println("PRECIO2:");
         precio = leer.nextDouble();
