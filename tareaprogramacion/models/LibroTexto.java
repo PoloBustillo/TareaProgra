@@ -1,14 +1,14 @@
-package tarea3;
+package tareaprogramacion.models;
 
 public class LibroTexto extends Libro {
 
     private String curso;
 
-    public LibroTexto(String titulo, String autores, double precio) {
+    public LibroTexto(String titulo, String[] autores, double precio) {
         super(titulo, autores, precio);
     }
 
-    public LibroTexto(String titulo, String autores, double precio, String curso) {
+    public LibroTexto(String titulo, String[] autores, double precio, String curso) {
         super(titulo, autores, precio);
         this.curso = curso;
     }

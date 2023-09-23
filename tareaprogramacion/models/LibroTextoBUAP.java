@@ -1,14 +1,14 @@
-package tarea4;
+package tareaprogramacion.models;
 
 public class LibroTextoBUAP extends LibroTexto {
 
     private String facultad;
 
-    public LibroTextoBUAP(String titulo, String autores, double precio, String curso) {
+    public LibroTextoBUAP(String titulo, String[] autores, double precio, String curso) {
         super(titulo, autores, precio, curso);
     }
 
-    public LibroTextoBUAP(String titulo, String autores, double precio, String curso, String facultad) {
+    public LibroTextoBUAP(String titulo, String[] autores, double precio, String curso, String facultad) {
         super(titulo, autores, precio, curso);
         this.facultad = facultad;
     }

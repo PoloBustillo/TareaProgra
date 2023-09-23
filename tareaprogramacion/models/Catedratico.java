@@ -1,4 +1,4 @@
-package tarea5;
+package tareaprogramacion.models;
 
 public class Catedratico extends Persona {
     private String facultad;
