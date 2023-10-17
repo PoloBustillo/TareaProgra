@@ -1,55 +1,47 @@
 package tarea1;
 
-import javax.swing.*;
-
 public class Libro {
 
+    //*ZONA DE ATRIBUTOS
     private String titulo;
-    private String autores;
-    private double precio;
+    private double costoPublicacion;
 
 
-
-    public void imprimeLibro() {
-        System.out.println("titulo = " + titulo);
-        System.out.println("autores = " + autores);
+    public Libro() {
+        this.titulo = "GUERRA MUNDIAL Z";
+        this.costoPublicacion = 400;
     }
 
-    public void imprimePrecioLibro(){
-        imprimeLibro();
-        System.out.println("precio = " + precio);
+    public Libro(String tituloDesdeAFuera) {
+        this.titulo = tituloDesdeAFuera;
+        this.costoPublicacion = 3500;
     }
 
-    public void ventanaLibro(){
-        JOptionPane.showMessageDialog(null,"Titulo: "+titulo+", Autor: "+ autores+", Precio: "+ precio);
-    }
-    public Libro(String titulo, String autores, double precio) {
+    public Libro(String titulo, double costoDefault) {
         this.titulo = titulo;
-        this.autores = autores;
-        this.precio = precio;
+        this.costoPublicacion = costoDefault;
     }
+
+    public double calcularPrecioVenta() {
+        return this.titulo.length() * 50;
+    }
+
+
+    //OVERLOAD - poliformismo
 
     public String getTitulo() {
-        return titulo;
+        return this.titulo;
     }
 
     public void setTitulo(String titulo) {
         this.titulo = titulo;
     }
 
-    public String getAutores() {
-        return autores;
+    public double getCostoPublicacion() {
+        return costoPublicacion;
     }
 
-    public void setAutores(String autores) {
-        this.autores = autores;
-    }
-
-    public double getPrecio() {
-        return precio;
-    }
-
-    public void setPrecio(double precio) {
-        this.precio = precio;
+    public void setCostoPublicacion(double costoPublicacion) {
+        this.costoPublicacion = costoPublicacion;
     }
 }
